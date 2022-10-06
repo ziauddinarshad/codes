@@ -1,0 +1,44 @@
+import java.util.*;
+class namokar
+{
+public static void main()
+    {
+        Scanner sc = new Scanner(System.in);
+        int n, a ,  b , c ;
+        System.out.println("1; Scalene ");
+        System.out.println("2; equilateral");
+        System.out.println("3; isoceles");
+        System.out.println("choose from 1 2 3");
+        n = sc.nextInt();
+        
+        switch(n)
+        {
+            case 1:
+                System.out.println("enter 3 sides");
+                a = sc.nextInt();
+                b = sc.nextInt();
+                c = sc.nextInt();
+                double s= (a+b+c)/2;
+                double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+                System.out.println("area="+area);
+                break;
+                
+            case 2:
+                System.out.println("enter side");
+                int o = sc.nextInt();
+                double a1 = (Math.sqrt(3)*(o*o))/4;
+                System.out.println("area"+a1);
+                break;
+                
+            case 3:
+                System.out.println("Enter 2 side");
+                int q = sc.nextInt();
+                int w = sc.nextInt();
+                double a2 = (1/4)*q*Math.sqrt((4*(w*w))-(q*q));
+                System.out.println("area"+a2);
+                break;
+            default:
+                System.out.println("wrong");
+        }
+}
+}
