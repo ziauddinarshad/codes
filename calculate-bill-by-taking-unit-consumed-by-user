@@ -1,0 +1,22 @@
+import java.util.*;
+class namokar
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        int u , bill;
+        System.out.println("Enter Unit Consumed");
+        u = sc.nextInt();
+        if(u<=200)
+        bill=u*3;
+        else if (u<=400)
+        bill=200*3+(u-200)*4;
+        else if (u<=550)
+        bill=200*3+200*4+(u-150)*5;
+        else
+        bill=200*3+200*4+150*5+(u-500)*5;
+        bill = bill + 190;
+        System.out.println("UNIT="+u);
+        System.out.println("bill   ="+bill);
+    }
+}
