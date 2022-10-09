@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int n,d,r=0,num;
+	cin>>n;
+	num=n;
+	while(n!=0)
+	{
+		d=n%10;
+		r=r*10+d;	
+		n=n/10;
+	}
+	cout<<"reverse is:"<<r<<endl;
+	if(r==num)
+	cout<<"no is palindrome";
+	else
+	cout<<"no is not palindrome";
+}
